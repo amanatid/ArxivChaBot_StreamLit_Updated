@@ -1,5 +1,5 @@
 langchain
 llama-index==0.6.18
 openai
-streamlit
+streamlit==1.20.0
 fpdf
