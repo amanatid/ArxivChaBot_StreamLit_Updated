@@ -38,7 +38,7 @@ st.subheader(
 api_key_input = st.text_input(
     "OpenAI API Key",
     type="password",
-    placeholder="Paste your OpenAI API key here (sk-...)",
+    placeholder="Paste your OpenAI API key here.....",
     help="You can get your API key from https://platform.openai.com/account/api-keys.",
 )
 
