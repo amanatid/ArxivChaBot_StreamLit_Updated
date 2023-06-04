@@ -81,8 +81,10 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
 
     if user and index is not None:
-        response = str(index.query(user))
-
+        query_engine = index.as_query_engine()
+        response = str(query_engine.query(user))
+        #response = str(index.query(user))
+        
     if submitted:
         try:
             if not st.session_state.get("api_key_configured"):
