@@ -1,7 +1,6 @@
 # ArxivChaBot_StreamLit_Updated GTPVectorIndex
 A Chatbot based on openAI and streamlit for Arxiv 
 
-A Chatbot based on openAI and streamlit for Arxiv 
 
 ## **Intro**
 
