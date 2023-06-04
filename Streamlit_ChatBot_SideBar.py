@@ -76,14 +76,17 @@ if query and max_query:
 
 
 with st.form("my_form"):
-    #user='What is quantum gravity?'
     user = st.text_input("Ask me any question about " + query + ":")
     submitted = st.form_submit_button("Submit")
 
-    if user and index is not None:
-        query_engine = index.as_query_engine()
-        response = str(query_engine.query(user))
-        #response = str(index.query(user))
+    try:
+        if user and index is not None:
+            query_engine = index.as_query_engine()
+            response = str(query_engine.query(user))
+    except Exception as err:
+            st.error("User input or Index Error", err)
+
+       
         
     if submitted:
         try:
