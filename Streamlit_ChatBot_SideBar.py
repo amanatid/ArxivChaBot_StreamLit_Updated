@@ -1,11 +1,17 @@
-from llama_index import  GPTVectorStoreIndex,download_loader
+####################
+from llama_index import  GPTVectorStoreIndex,download_loader, VectorStoreIndex
+#################
+
 from langchain.agents import initialize_agent, Tool
 from langchain.llms import OpenAI
 from langchain.chains.conversation.memory import ConversationBufferMemory
 from langchain.embeddings import OpenAIEmbeddings
 
 from openai.error import OpenAIError
-from base import ArxivReader_mod_search, ArxivReader_mod
+######################
+from base import  ArxivReader_mod
+######################
+
 import os
 import sys
 import openai
@@ -68,7 +74,11 @@ if query and max_query:
         loader = ArxivReader_mod()
         documents = loader.load_data(search_query=query, papers_dir="papers", max_results=max_query,
                                      search_criterion=search_query_int)
-        index = GPTVectorStoreIndex.from_documents(documents)
+        ##############
+        openai.api_key = api_key_input
+        index = VectorStoreIndex.from_documents(documents)
+        ##############
+        ####index = GPTVectorStoreIndex.from_documents(documents)
         st.markdown("Arxiv papers are loaded based on the criteria")
         st.session_state["api_key_configured"] = True
     except Exception as e:
