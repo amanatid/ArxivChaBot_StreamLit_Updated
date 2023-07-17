@@ -1,5 +1,6 @@
 # ArxivChaBot_StreamLit_Updated GTPVectorIndex
-A Chatbot based on openAI and streamlit for Arxiv 
+A Chatbot based on openAI and streamlit for Arxiv.
+
 
 
 ## **Intro**
@@ -16,6 +17,8 @@ is an extension of the  previous related Arxiv repos and is trained based on thr
     
 You can find the app on [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://amanatid-arxivchabot-streamlit-streamlit-chatbot-sidebar-2r4zv4.streamlit.app/). In case you find it useful you can donate on [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288). 
 
+For more info  how the llama indexes and langchain models work, there is a nice two part article by [
+Ryan Nguyen](https://medium.com/how-ai-built-this/zero-to-one-a-guide-to-building-a-first-pdf-chatbot-with-langchain-llamaindex-part-1-7d0e9c0d62f).
 
 
 ### **Quick Start**  
