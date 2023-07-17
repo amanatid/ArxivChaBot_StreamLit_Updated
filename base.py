@@ -8,6 +8,9 @@ from llama_index import download_loader
 from llama_index.readers.base import BaseReader
 from llama_index.readers.schema.base import Document
 from fpdf import FPDF
+#################
+from llama_index import SimpleDirectoryReader
+#################
 
 class ArxivReader_mod(BaseReader):
     """Arxiv Reader.
@@ -94,10 +97,9 @@ class ArxivReader_mod(BaseReader):
         def get_paper_metadata(filename):
             return paper_lookup[filename]
 
-        SimpleDirectoryReader = download_loader("SimpleDirectoryReader")
-        arxiv_documents = SimpleDirectoryReader(
-            papers_dir, file_metadata=get_paper_metadata
-        ).load_data()
+       ######## SimpleDirectoryReader = download_loader("SimpleDirectoryReader")
+        arxiv_documents = SimpleDirectoryReader(papers_dir, file_metadata=get_paper_metadata).load_data()
+       #########################################################################
         # Include extra documents containing the abstracts
         abstract_documents = []
         for paper in search_results:
