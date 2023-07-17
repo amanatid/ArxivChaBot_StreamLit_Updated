@@ -60,7 +60,7 @@ class ArxivReader_mod(BaseReader):
             query=search_query,
             id_list=[],
             max_results=max_results,
-            sort_by=arxiv.SortCriterion.Relevance,
+            sort_by=sort_criterion,
         )
 
         search_results = list(arxiv_search.results())
