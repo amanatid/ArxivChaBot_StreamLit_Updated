@@ -40,9 +40,7 @@ def sidebar():
         st.markdown(
             "This is a work in progress. "
             "You can contribute to the project on [GitHub](https://github.com/amanatid/ArxivChatBot_StreamlitApp) " 
-            "with your feedback and suggestions💡. Due to regular upgrades from llama or streamilit team, the app maybe 
-            sometimes crashes. I try to keep it on a continous updated basis but in any case please, contact me on the email
-            below."
+            "with your feedback and suggestions💡."
         )
         st.markdown("Made by [amanatid](amanatid@gmail.com)")
         st.markdown("---")
