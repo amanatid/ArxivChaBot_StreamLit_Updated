@@ -102,9 +102,9 @@ class ArxivReader_mod(BaseReader):
        #########################################################################
         # Include extra documents containing the abstracts
         abstract_documents = []
-       # for paper in search_results:
-       #     d = f"The following is a summary of the paper: {paper.title}\n\nSummary: {paper.summary}"
-       #     abstract_documents.append(Document(d))
+        for paper in search_results:
+            d = f"The following is a summary of the paper: {paper.title}\n\nSummary: {paper.summary}"
+            abstract_documents.append(Document(text=d))
 
 
         return arxiv_documents + abstract_documents
