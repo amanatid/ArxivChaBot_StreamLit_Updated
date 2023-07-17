@@ -40,8 +40,10 @@ option to download the requested pdf files along with their abstracts.
 ### **References**
 1. https://github.com/StanfordVL/arxivbot/
 2. https://github.com/emptycrown/llama-hub/blob/main/loader_hub/papers/arxiv/
-3. https://llamahub.ai/l/papers-arxiv
-4. https://github.com/mmz-001/knowledge_gpt/tree/main
-5. https://www.arxiv.org/
+3. https://medium.com/how-ai-built-this/zero-to-one-a-guide-to-building-a-first-pdf-chatbot-with-langchain-llamaindex-part-1-7d0e9c0d62f
+4. https://betterprogramming.pub/llamaindex-how-to-use-index-correctly-6f928b8944c6
+5. https://llamahub.ai/l/papers-arxiv
+6. https://github.com/mmz-001/knowledge_gpt/tree/main
+7. https://www.arxiv.org/
 
 
