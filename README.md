@@ -28,7 +28,7 @@ You can find the app on [![Streamlit App](https://static.streamlit.io/badges/str
 We are using the default chat model from OpenAI ChatGPT-4.
 
 ### Issues
-In the case of a free OpenAI API key takes time to index the loaded pdf files since a free API key has a restricted [rate limits](https://platform.openai.com/docs/guides/rate-limits/overview). To make the process fast, you can use a paid API key. It is not so fast during the training along with the response from the Chatbot engine.
+In the case of a free OpenAI API key takes time to index the loaded pdf files since a free API key has a restricted [rate limits](https://platform.openai.com/docs/guides/rate-limits/overview). To make the process fast, you can use a paid API key. It is not so fast during the training along with the response from the Chatbot engine. Also, Due to reqular updates from the llama/streamlit team, the app might crash. I try to maintain it up. In any case, please report any problem in the email [amanatid](amanatid@gmail.com).
 
 ### Future Prospectives 
 We  are looking to improve the layout and be more self-explanatory. Also, we will provide
