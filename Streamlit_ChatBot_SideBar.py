@@ -59,6 +59,8 @@ dummy = st.radio(
     ('Relevance', 'LastUpdated', 'SubmittedDate'))
 
 
+print(query,max_query)
+
 if query and max_query:
     if dummy == 'Relevance':
         search_query_int = 0
@@ -68,7 +70,6 @@ if query and max_query:
 
     if dummy == "SubmittedDate":
         search_query_int = 2
-    print(api_key_input)
     print(query,max_query,search_query_int)
     try:
         # load the reader
