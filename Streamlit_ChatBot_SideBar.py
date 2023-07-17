@@ -68,14 +68,15 @@ if query and max_query:
 
     if dummy == "SubmittedDate":
         search_query_int = 2
-
+    print(api_key_input)
+    print(query,max_query,search_query_int)
     try:
         # load the reader
         loader = ArxivReader_mod()
         documents = loader.load_data(search_query=query, papers_dir="papers", max_results=max_query,
                                      search_criterion=search_query_int)
         ##############
-        openai.api_key = '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'
+        openai.api_key = api_key_input
         index = VectorStoreIndex.from_documents(documents)
         ##############
         ####index = GPTVectorStoreIndex.from_documents(documents)
