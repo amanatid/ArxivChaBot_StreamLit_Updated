@@ -34,8 +34,8 @@ st.set_page_config(page_title="My App")
 st.header("ArxivGPT ")
 sidebar()
 st.subheader(
-    "I am an ArxivGPT(Chatbot) Research Scientist. Please fill the fields below to start our discussion.."
-    "If you find it useful, you can kindly donate here [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288)..and"
+    "I am an ArxivGPT(Chatbot) Research Scientist. Please fill the fields below to start our discussion....."
+    "If you find it useful, you can kindly donate here [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288)....and "
     "for any problem, please report to the email [amanatid](amanatid@gmail.com)"
 )
 
