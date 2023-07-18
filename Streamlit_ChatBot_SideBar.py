@@ -1,5 +1,5 @@
 ####################
-from llama_index import  GPTVectorStoreIndex,download_loader, VectorStoreIndex
+from llama_index import download_loader, VectorStoreIndex
 #################
 
 from langchain.agents import initialize_agent, Tool
@@ -35,7 +35,8 @@ st.header("ArxivGPT ")
 sidebar()
 st.subheader(
     "I am an ArxivGPT(Chatbot) Research Scientist. Please fill the fields below to start our discussion.."
-    "If you find it useful, you can kindly donate here [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288)"
+    "If you find it useful, you can kindly donate here [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288)..and"
+    "for any problem, please report to the email [amanatid](amanatid@gmail.com)"
 )
 
 
