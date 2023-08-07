@@ -31,7 +31,7 @@ class ArxivReader_mod(BaseReader):
     def load_data(
             self,
             search_query: str,
-            papers_dir: Optional[str] = r".papers",
+            papers_dir: Optional[str] = ".papers",
             max_results: Optional[int] = 50,
             search_criterion: Optional[int] = 0,
     ) -> List[Document]:
