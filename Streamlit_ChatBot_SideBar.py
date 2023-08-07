@@ -75,7 +75,7 @@ if query and max_query:
     
     # load the reader
     loader = ArxivReader_mod()
-    documents = loader.load_data(search_query=query, papers_dir="papers", max_results=max_query,
+    documents = loader.load_data(search_query=query, papers_dir="/tmp/papers", max_results=max_query,
                                  search_criterion=search_query_int)
     ##############
     openai.api_key = api_key_input
