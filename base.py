@@ -66,14 +66,14 @@ class ArxivReader_mod(BaseReader):
         search_results = list(arxiv_search.results())
         logging.debug(f"> Successfully fetched {len(search_results)} papers")
         # Delete downloaded papers
-        try:
-            for f in os.listdir(papers_dir):
-                os.remove(os.path.join(papers_dir, f))
-                logging.debug(f"> Deleted file: {f}")
-            os.rmdir(papers_dir)
-            logging.debug(f"> Deleted directory: {papers_dir}")
-        except OSError:
-            print("Unable to delete files or directory")
+     #   try:
+     #       for f in os.listdir(papers_dir):
+     #           os.remove(os.path.join(papers_dir, f))
+     #           logging.debug(f"> Deleted file: {f}")
+     #       os.rmdir(papers_dir)
+     #       logging.debug(f"> Deleted directory: {papers_dir}")
+     #   except OSError:
+     #       print("Unable to delete files or directory")
 
         #create directory
         if not os.path.exists(papers_dir):
