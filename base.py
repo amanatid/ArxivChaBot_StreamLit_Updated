@@ -76,37 +76,10 @@ class ArxivReader_mod(BaseReader):
      #       print("Unable to delete files or directory")
 
         #create directory
-        if not os.path.exists(papers_dir):
-            os.makedirs(papers_dir)
+     #   if not os.path.exists(papers_dir):
+     #       os.makedirs(papers_dir)
 
-        paper_lookup = {}
-        for paper in search_results:
-            # Hash filename to avoid bad charaters in file path
-            filename = f"{self._hacky_hash(paper.title)}.pdf"
-            #filename = f"{paper.title}.pdf"
-            paper_lookup[os.path.join(papers_dir, filename)] = {
-                "Title of this paper": paper.title,
-                "Authors": (", ").join([a.name for a in paper.authors]),
-                "Date published": paper.published.strftime("%m/%d/%Y"),
-                "URL": paper.entry_id,
-                # "summary": paper.summary
-            }
-            paper.download_pdf(dirpath=papers_dir, filename=filename)
-            logging.debug(f"> Downloading {filename}...")
-
-        def get_paper_metadata(filename):
-            return paper_lookup[filename]
-
-       ######## SimpleDirectoryReader = download_loader("SimpleDirectoryReader")
-        arxiv_documents = SimpleDirectoryReader(papers_dir, file_metadata=get_paper_metadata).load_data()
-       #########################################################################
-        # Include extra documents containing the abstracts
-        abstract_documents = []
-        for paper in search_results:
-            d = f"The following is a summary of the paper: {paper.title}\n\nSummary: {paper.summary}"
-            abstract_documents.append(Document(text=d))
-
-
+      
         return arxiv_documents + abstract_documents
 
     def load_papers_and_abstracts(
