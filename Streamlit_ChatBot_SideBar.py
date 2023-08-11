@@ -21,7 +21,7 @@ from  sidebar  import *
 
 
 # create the website reader
-ArxivReader= download_loader("ArxivReader")
+#######ArxivReader= download_loader("ArxivReader")
 global loader,documents, index,dummy, test
 
 loader = None
@@ -33,6 +33,19 @@ st.set_page_config(page_title="My App")
 
 st.header("ArxivGPT ")
 sidebar()
+
+
+
+st.header("Please Note!!!")
+st.subheader(
+     "Due to technical problems  the ArxivGPT is down. We are working to fix the problem."
+     "In the meanwhile exactly the same version can be visited in HuggingFace platform."
+     "Please click on the link [ArxivGPT](https://huggingface.co/spaces/amanatid/ArxivGPT_Streamlit)."
+)
+
+
+
+
 st.subheader(
     "I am an ArxivGPT(Chatbot) Research Scientist. Please fill the fields below to start our discussion....."
     "If you find it useful, you can kindly donate here [Stripe](https://buy.stripe.com/cN2dUu44OahXaJO288)....and "
