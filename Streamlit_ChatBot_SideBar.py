@@ -21,7 +21,7 @@ from  sidebar  import *
 
 
 # create the website reader
-#######ArxivReader= download_loader("ArxivReader")
+ArxivReader= download_loader("ArxivReader")
 global loader,documents, index,dummy, test
 
 loader = None
@@ -88,7 +88,7 @@ if query and max_query:
     
     # load the reader
     loader = ArxivReader_mod()
-    documents = loader.load_data(search_query=query, papers_dir="/tmp/papers", max_results=max_query,
+    documents = loader.load_data(search_query=query, papers_dir="arxivchabot_streamlit_updated/static", max_results=max_query,
                                  search_criterion=search_query_int)
     ##############
     openai.api_key = api_key_input
