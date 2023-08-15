@@ -31,7 +31,7 @@ class ArxivReader_mod(BaseReader):
     def load_data(
             self,
             search_query: str,
-            papers_dir: Optional[str] = "/tmp/papers",
+            papers_dir: Optional[str] = "arxivchabot_streamlit_updated/static",
             max_results: Optional[int] = 50,
             search_criterion: Optional[int] = 0,
     ) -> List[Document]:
