@@ -21,7 +21,7 @@ from  sidebar  import *
 
 
 # create the website reader
-#######ArxivReader= download_loader("ArxivReader")
+ArxivReader= download_loader("ArxivReader")
 global loader,documents, index,dummy, test
 
 loader = None
